@@ -9,7 +9,8 @@ public class StaticAndNonStaticMethod {
     public static void main(String []arg){
         StaticAndNonStaticMethod obj = new StaticAndNonStaticMethod();  //Create object for run nonstatic method
         myClass();         //No need to object //Static method
-        obj.secondClass(); //Object.method name //Nonstatic Method 
+        obj.secondClass(); //Object.method name //Nonstatic Method
+        //
 
     }
 }
