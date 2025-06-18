@@ -1,5 +1,6 @@
 public class StaticAndNonStaticMethod {
     public static void myClass(){  //static method
+
         System.out.println("Print static class");
     }
     public void secondClass(){
@@ -8,7 +9,7 @@ public class StaticAndNonStaticMethod {
     }
     public static void main(String []arg){
         StaticAndNonStaticMethod obj = new StaticAndNonStaticMethod();  //Create object for run nonstatic method
-        myClass();         //No need to object //Static method
+        myClass();       //StaticAndNonStaticMethod.myClass(); we can run calssname.methodname if method is static in nature //No need to object //Static method
         obj.secondClass(); //Object.method name //Nonstatic Method
 
 
