@@ -21,7 +21,6 @@ public class TypesOfVariables {
         TypesOfVariables obj = new TypesOfVariables(); //create obj for run nonstatic method
         staticMethod();  // no obj is required for static method
         obj.nonStaticMethod();
-
         System.out.println("local variable value is " + d);
     }
 }
