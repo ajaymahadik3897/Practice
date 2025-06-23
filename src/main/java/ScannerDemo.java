@@ -17,7 +17,8 @@ public class ScannerDemo {
     }
 
     public static void main (String [] ar){
-        integer(); string();  // Call the methods to demonstrate integer and string input
+        integer();
+        string();  // Call the methods to demonstrate integer and string input
 
     }
 
