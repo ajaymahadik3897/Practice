@@ -5,7 +5,7 @@ public class SwitchStatement {
         //scanner for user input
         Scanner scanner = new Scanner(System.in); // Create a Scanner object to read input from the console
         System.out.println("Enter a number: ");
-        int number = scanner.nextInt(); // Read an integer input from the user
+        int number = scanner.nextInt(); // Read an integer input from the user  //for string we use nextLine() method //for int we use nextInt() method //if we use nextLine() then it will not work because it will read the whole line as a string and not as an integer
 
         switch (number) { // Switch statement to handle different cases based on the input number
             case 1:   // If the input is 1, it will print "Monday" // and so on for other cases // if we use case "monday" then it will not work because case is used for numbers then we need to use String //case 1 replaces with case "monday" and so on
