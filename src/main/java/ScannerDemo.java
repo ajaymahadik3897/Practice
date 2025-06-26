@@ -43,3 +43,5 @@ public class ScannerDemo {
 //nextFloat() method is used to read a float value
 //nextByte() method is used to read a byte value
 //nextShort() method is used to read a short value
+
+
