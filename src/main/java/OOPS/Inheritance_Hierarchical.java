@@ -1,4 +1,4 @@
-package Collection;
+package OOPS;
 class tiger extends animal { // dog is a sub class of animal // animal class is present in Inheritance_MultiLevel class
     public void B() {
         System.out.println("tiger is a sub class of animal");

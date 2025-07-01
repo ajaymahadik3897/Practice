@@ -1,4 +1,4 @@
-package Collection;
+package OOPS;
 
 class home {
     public void TV() {

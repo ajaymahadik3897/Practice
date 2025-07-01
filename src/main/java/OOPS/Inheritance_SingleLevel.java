@@ -1,4 +1,4 @@
-package Collection;
+package OOPS;
 
 class animal1 {
     public static void A() {
