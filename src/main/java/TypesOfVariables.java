@@ -6,7 +6,7 @@ public class TypesOfVariables {
     static void staticMethod(){
         System.out.println("Static Types of variable is " + b);
         TypesOfVariables obj = new TypesOfVariables();
-        System.out.println("Non Static Type of variable run in static method by using object " + obj.a);
+        System.out.println("Non Static Type of variable run in static method by using object " + obj.a); //we can run non static variable in static method by using object
         System.out.println("--------------------------------");
     }
     void nonStaticMethod(){
@@ -22,5 +22,6 @@ public class TypesOfVariables {
         staticMethod();  // no obj is required for static method
         obj.nonStaticMethod();
         System.out.println("local variable value is " + d);
+
     }
 }
