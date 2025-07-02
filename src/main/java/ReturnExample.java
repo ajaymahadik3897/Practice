@@ -1,4 +1,4 @@
-public class ReturnExample {  //return keyword example
+public class ReturnExample {  //return keyword exampl
     public static int add(int a, int b) {
         return a + b; // returns the sum to the caller
     }
