@@ -20,6 +20,6 @@ public class Abstraction extends demo {  //concrete class that extends abstract 
         obj.AB();
         obj.test();
         Abstraction.D(); //demo.D // obj.D //we can run static method of abstract class using object of subclass or class name
-
+//
     }
 }
