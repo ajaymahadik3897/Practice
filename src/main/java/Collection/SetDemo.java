@@ -24,7 +24,7 @@ public class SetDemo {
 
         // Removing an element
         set.remove("Cherry");
-        System.out.println("HashSet after removing 'Cherry': " + set);
+        System.out.println("HashSet after removing 'Cherry': " + set); // System.out.println(set.remove("Cherry"));
 
         // Iterating through the HashSet
         System.out.println("Iterating through the HashSet:");

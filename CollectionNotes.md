@@ -1,4 +1,16 @@
 
+
+When to use which collection in Java:
+| Use Case                            | Choose          |
+| ----------------------------------- | --------------- |
+| Need to keep duplicates             | `List`          |
+| Need only unique elements           | `Set`           |
+| Need to process tasks in order      | `Queue`         |
+| Need fast lookup without duplicates | `HashSet`       |
+| Need indexed access (get by index)  | `ArrayList`     |
+| Need priority-based processing      | `PriorityQueue` |
+
+
 List - A collection that maintains the order of elements and allows duplicates.
 ## List Interface
 arrayList and LinkedList are two common implementations of the List interface in Java. methods are similar for both, but their underlying implementations differ.
@@ -104,7 +116,24 @@ difference between list, set, and map:
 3.List is used for storing and accessing elements at any position; Queue is used for processing elements in order (adding at the end, removing from the front).
 4 List common implementations: ArrayList, LinkedList; Queue common implementations: LinkedList, PriorityQueue, ArrayDeque.
 
-differece between HashMap and HashTable in Java:
+Queue types in Java:
+| Type            | Description                               | Example Usage                  |
+| --------------- | ----------------------------------------- | ------------------------------ |
+| `LinkedList`    | Implements Queue interface, allows FIFO operations | `Queue<String> queue = new LinkedList<>();` |
+| `PriorityQueue` | Implements Queue interface, orders elements based on priority | `Queue<Integer> pq = new PriorityQueue<>();` |
+
+LinkedList and PriorityQueue are two common implementations of the Queue interface in Java. LinkedList allows FIFO operations, while PriorityQueue orders elements based on their priority.
+difference between LinkedList and PriorityQueue
+| Feature         | LinkedList                             | PriorityQueue                        |
+| --------------- | -------------------------------------- | ------------------------------------- |
+| Order           | Maintains insertion order               | Orders elements based on priority     |
+| Duplicates      | Allows duplicates                       | Allows duplicates, but orders by priority |
+| Access          | Accessed by index (get(index))         | Not accessed by index, uses priority   |
+| Use Case        | General-purpose queue operations       | Priority-based processing (e.g., tasks) |
+
+
+# HashMap vs HashTable - A collection that maps keys to values, allowing for fast retrieval by key.
+difference between HashMap and HashTable in Java:
 | Feature         | HashMap                               | Hashtable                             |
 | --------------- | ------------------------------------- | -------------------------------------- |
 | Synchronization | Not synchronized (not thread-safe)    | Synchronized (thread-safe)             |

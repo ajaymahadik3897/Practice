@@ -19,7 +19,7 @@ public class Queue {
         System.out.println("PriorityQueue: " + queue);
 
         // Accessing the head of the PriorityQueue
-        System.out.println("Head of the PriorityQueue: " + queue.peek()); // peek returns the head element without removing it
+        System.out.println("Head of the PriorityQueue: " + queue.peek()); // peek returns the head element without removing it //queue.element() can also be used to get the head element - throws error if queue is empty
 
         // Removing the head of the PriorityQueue
         System.out.println("Removing head: " + queue.poll()); // poll removes and returns the head element
@@ -35,6 +35,12 @@ public class Queue {
         for (String fruit : queue) {
             System.out.println(fruit);
         }
+
+        //removing a specific element
+        queue.remove("Cherry"); // remove removes a specific element
+        System.out.println("PriorityQueue after removing 'Cherry': " + queue);
+        // Printing the PriorityQueue after removing an element
+        System.out.println("PriorityQueue after removing 'Cherry': " + queue);
 
         // Clearing the PriorityQueue
         queue.clear();
