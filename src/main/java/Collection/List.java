@@ -1,6 +1,7 @@
 package Collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 //all the methods used in Arraylist are also available in linklist //no any difference in methods //only difference is in the implementation
 public class List {
@@ -64,6 +65,13 @@ public class List {
         //checking if two ArrayLists are equal
         boolean areEqual = list.equals(copiedList); //equals is used to check if two ArrayLists are equal
         System.out.println("Are the original and copied ArrayLists equal? " + areEqual);
+
+        //Min and Max elements in ArrayList
+        String min = Collections.min(list);
+        String max = Collections.max(list);
+        System.out.println("Minimum element in ArrayList: " + min);
+        System.out.println("Maximum element in ArrayList: " + max);
+
 
     }
 

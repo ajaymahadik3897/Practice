@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Array {
     static void singleDiamentionalArray() {
@@ -77,6 +78,23 @@ public class Array {
         System.out.println("Average of elements: " + average);
 
 
+        //finding the maximum and minimum elements using streams (Java 8+)
+        //int max = Arrays.stream(arr).max().getAsInt(); //max value using streams
+        //int min = Arrays.stream(arr).min().getAsInt(); //min value using streams
+        //System.out.println("Max value: " + max);
+        //System.out.println("Min value: " + min);
+
+
+        //finding the frequency of an element
+        int frequencyElement = 10;
+        int frequency = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == frequencyElement) {
+                frequency++;
+            }
+        }
+        System.out.println("Frequency of element " + frequencyElement + ": " + frequency);
+
 
 
     }
@@ -139,6 +157,7 @@ public class Array {
             }
             System.out.println();
         }
+
 
     }
 
