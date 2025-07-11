@@ -21,6 +21,9 @@ public class Scrolling {
         // JS.executeScript("window.scrollBy(500, 0);"); // Scroll right by 500 pixels
         // scroll to left
         // JS.executeScript("window.scrollBy(-500, 0);"); // Scroll left by 500 pixels
+        Thread.sleep(2000);
+        //set zoom level of the page
+        JS.executeScript("document.body.style.zoom = '10%';"); // Zoom in the page by 150%
 
     }
 

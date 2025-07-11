@@ -13,6 +13,7 @@ public class Loops {
         while (i < 5) { // Loop while i is less than 5
             System.out.println("Iteration: " + i);
             i++; // Increment the counter
+
         }
     }
     public static void doWhileLoop(){  //use when you want to execute the loop at least once
