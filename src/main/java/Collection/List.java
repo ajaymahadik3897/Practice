@@ -40,6 +40,13 @@ public class List {
         //for (int i = 0; i < list.size(); i++) { //using a for loop to iterate through the elements of the ArrayList
          //   System.out.println("Element at index " + i + ": " + list.get(i)); }
 
+        /* or using iterator
+        System.out.println("Iterating using iterator:");
+        Iterator<String> Mylist = list.iterator(); //iterator is used to iterate through the elements of the ArrayList
+        while (Mylist.hasNext()) { //hasNext is used to check if there are more elements to iterate
+        System.out.println(Mylist.next()); //next is used to get the next element in the iteration
+         */
+
 
         //clearing the ArrayList
         list.clear(); //clear is used to remove all elements from the ArrayList
