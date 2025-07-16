@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="TestNG.ListnerClass"/>  <!-- // We add the listener class here // This is the class that implements ITestListener -->
+    </listeners>
+
+
+    <test verbose="2" preserve-order="true"
+          name="Listners.xml">
+        <classes>
+            <class name="TestNG.ListenersTestClass">  <!-- // We add the class that contains the test methods -->
+            </class>
+        </classes>
+    </test>
+</suite>
