@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="tests">  
+<suite name="All Test Suite" parallel="tests">   // parallel="tests" means we can run tests in parallel // if we not use parallel="tests" then it will run one by one
 
     <!-- for class Parameterization we use this xml file -->
     <!-- use 3 tests in same xml file for run parallely same class at same time -->
