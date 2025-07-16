@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Grouping Test">
+        <groups>
+            <run>                          <!--Define which groups to include in the test run -->
+                <include name="smoke"/>    <!-- Include tests with 'smoke' group -->
+                <include name="sanity"/>   <!-- Include tests with 'sanity' group -->
+                <exclude name="regression"/> <!-- Exclude tests with 'regression' group. -->
+            </run>
+        </groups>
+
+        <classes>   <!-- Specify the classes to be included in this test run  // Classes can be specified here -->
+            <class name="TestNG.Groups"/>
+            <class name="TestNG.New"/>
+            <class name="TestNG.Third"/>
+        </classes>
+    </test>
+</suite>

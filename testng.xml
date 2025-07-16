@@ -2,20 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/mahadik.santosh/Desktop/QA Academy/Practice/src/test/java/TestNG/TestNGAnnotations.java">
+          name="C:/Users/mahadik.santosh/Desktop/QA Academy/Practice/src/test/java/TestNG/DependsOnMethod.java">
         <classes>
-            <class name="TestNG.TestNGAnnotations">   // This class contains the test methods // run 2 classes parallel
-                <methods>                             //We can run only class also not need to specify methods --once run class methods run by default
-                    <include name="ATest"/>
-                    <include name="BTest"/>
-                </methods>
-            </class>
-
-            <class name="TestNG.Test1">               // This class contains the test methods
-                <methods>
-                    <include name="ATest"/>
-                    <include name="BTest"/>
-                </methods>
+            <class name="TestNG.DependsOnMethod">
             </class>
         </classes>
     </test>
