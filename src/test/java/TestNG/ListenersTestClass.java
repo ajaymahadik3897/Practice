@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 // we use this class to run the tests with TestNG listeners
 // this class will run the tests and log the test events using the ListnerClass.java
-// Listners.xml file is used to run this class with the ListnerClass.java //
+// Listners.xml file is used to run this class with the ListnerClass.java 
 
 public class ListenersTestClass {
 
