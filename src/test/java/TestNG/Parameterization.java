@@ -58,8 +58,8 @@ public class Parameterization {
     }
 
     @AfterClass
-    public void TearDown() {
-
-        driver.quit();
-    }
+//    public void TearDown() {
+//
+//        driver.quit();
+//    }
 }
