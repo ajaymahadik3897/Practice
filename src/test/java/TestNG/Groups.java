@@ -2,6 +2,8 @@ package TestNG;
 
 import org.testng.annotations.Test;
 
+//Groups.xml is used to run the tests based on the groups defined in the code.
+
 public class Groups {
 
     @Test (groups = {"sanity"})
