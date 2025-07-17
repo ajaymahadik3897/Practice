@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class ActionClass {
+public class ActionClass {  // Action class is used to perform complex user interactions like mouse movements, drag and drop, etc.
 
     public static void main(String [] args) throws InterruptedException {
 

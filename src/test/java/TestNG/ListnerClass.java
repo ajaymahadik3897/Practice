@@ -12,10 +12,10 @@ import org.testng.ITestResult;
 
 public class ListnerClass implements ITestListener {
 
-    public void onStart(ITestContext context) {
+    public void onStart(ITestContext context) {  // context is the test context which contains information about the test run
         System.out.println("Test started: " + context.getName());
     }
-    public void onTestStart(ITestResult result) {
+    public void onTestStart(ITestResult result) {  // result is the test result which contains information about the test that started
         System.out.println("Test started: " + result.getName());
     }
 

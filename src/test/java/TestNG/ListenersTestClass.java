@@ -6,13 +6,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 
 // we use this class to run the tests with TestNG listeners
 // this class will run the tests and log the test events using the ListnerClass.java
-// Listners.xml file is used to run this class with the ListnerClass.java 
+// Listners.xml file is used to run this class with the ListnerClass.java
 
+
+
+//without xml file, we can use the @Listeners annotation to link the ListnerClass to this test class as per below
+// @Listeners(Package.ListenerClassname.class)
+// @Listeners(TestNG.ListnerClass.class) // This annotation links the ListnerClass to this test class
 public class ListenersTestClass {
 
     WebDriver driver;
