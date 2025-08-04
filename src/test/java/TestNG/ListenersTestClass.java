@@ -17,8 +17,10 @@ import org.testng.annotations.Test;
 
 
 //without xml file, we can use the @Listeners annotation to link the ListnerClass to this test class as per below
-// @Listeners(Package.ListenerClassname.class)
-// @Listeners(TestNG.ListnerClass.class) // This annotation links the ListnerClass to this test class
+//example - @Listeners(Package.ListenerClassname.class)
+
+
+// @Listeners(TestNG.ListnerClass.class) // This annotation links the ListnerClass to this test class //we comment this line to run the tests without listeners
 public class ListenersTestClass {
 
     WebDriver driver;
