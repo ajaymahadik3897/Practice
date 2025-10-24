@@ -22,7 +22,7 @@ public class TypesOfVariables {
         staticMethod();  // no obj is required for static method
         obj.nonStaticMethod();
         System.out.println("local variable value is " + d);
-
+        System.out.println("Value of c is : " + obj.c);   //
     }
 }
 
