@@ -1,5 +1,5 @@
 public class ReturnExample {  // Class definition for ReturnExample
-    public static int add(int a, int b) {
+    public static int add(int a, int b) {  // If a method is declared with a return type (like int, double, String, etc.), then the method must use return to give a value of that type back to the caller.
         return a + b; // returns the sum to the caller
     }
 
@@ -14,3 +14,6 @@ public class ReturnExample {  // Class definition for ReturnExample
         // Note: If the add method were static, you could call it directly using the class name without creating an instance.
     }
 }
+
+
+//

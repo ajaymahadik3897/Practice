@@ -22,7 +22,7 @@ public class List {
         System.out.println("First element: " + list.get(0)); //get is used to access elements at a specific index
         //size of the ArrayList
         System.out.println("Size of ArrayList: " + list.size()); //size is used to get the number of elements in the ArrayList
-        //removing an element
+        //removing an elementc
         list.remove("Cherry"); //remove is used to remove an element from the ArrayList
 
         System.out.println("ArrayList after removing 'Cherry': " + list);
