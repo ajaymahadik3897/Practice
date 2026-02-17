@@ -32,11 +32,14 @@ public class ConditionalStatement {
         int a = 17;
         if (a < 5) {
             System.out.println("a is less than 5");
-        } else if (a < 15) { // Check if a is less than 15
+        }
+        else if (a < 15) { // Check if a is less than 15
             System.out.println("a is between 5 and 15");
-        } else if (a < 20) { // Check if a is less than 20
+        }
+        else if (a < 20) { // Check if a is less than 20
             System.out.println("a is between 15 and 20");
-        } else {  // If all previous conditions are false, this block will execute
+        }
+        else {  // If all previous conditions are false, this block will execute
             System.out.println("a is greater than or equal to 20");
         }
     }

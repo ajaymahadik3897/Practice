@@ -8,22 +8,23 @@ class Person {
     private String name;  // Private field, not accessible outside this class
     private int age;    // Private field, not accessible outside this class
 
- String getName (){
-     return name;  // Public method to get the name, allows controlled access
- }
- int getAge() {
-     return age;  // Public method to get the age, allows controlled access
- }
-
  void setName (String name){
      this.name = name;  // Public method to set the name, allows controlled access
  }
-    void setAge(int age) {
+
+ void setAge(int age) {
         if (age > 0) {  // Validation before setting the age
             this.age = age;  // Public method to set the age, allows controlled access
         } else {
             System.out.println("Age must be positive.");
         }
+    }
+
+    String getName (){
+        return name;  // Public method to get the name, allows controlled access
+    }
+    int getAge() {
+        return age;  // Public method to get the age, allows controlled access
     }
 
 }

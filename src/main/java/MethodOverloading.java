@@ -1,9 +1,8 @@
 class Method1{
-    public void display() {
-        System.out.println("Method with no parameters");
-    }
+
 
     public void display(int a) {
+
         System.out.println("Method with one integer parameter: " + a);
     }
 
@@ -30,7 +29,7 @@ public class MethodOverloading {  // Example of method overloading in the same c
 
         // Example of method overloading in Java //we pull methods from another class to this class
         Method1 obj = new Method1(); //different class // Create an instance of Method1 to call its methods present in another class
-        obj.display(); // Calls the method with no parameters
+
         obj.display(5); // Calls the method with one integer parameter
         obj.display(10, "Hello"); // Calls the method with one integer and one string parameter
 
