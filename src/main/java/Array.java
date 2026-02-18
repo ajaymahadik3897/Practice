@@ -23,7 +23,7 @@ public class Array {
 
         //sorting the array
         Arrays.sort(arr);
-        System.out.println("Sorted array: " + Arrays.toString(arr));
+        System.out.println("Sorted array: " + Arrays.toString(arr)); // or  for (int i = 0; i < arr.length; i++) {  System.out.println("Sorted array: " + arr[i]); }
 
         //searching the array
         int searchElement = 30;

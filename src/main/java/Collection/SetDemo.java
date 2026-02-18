@@ -1,6 +1,7 @@
 package Collection;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class SetDemo {
 
@@ -31,6 +32,15 @@ public class SetDemo {
         for (String fruit : set) {
             System.out.println(fruit);
         }
+        // or use iterator
+        /*
+        Iterator<String> iterator = set.iterator();
+        System.out.println("Iterating through the HashSet with Iterator:");
+        while (iterator.hasNext()) {
+         String fruit = iterator.next();
+         System.out.println(fruit);
+        } */
+
 
         // Clearing the HashSet
         set.clear();
