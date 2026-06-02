@@ -39,6 +39,7 @@ public class POMClass {
     // Actions on the page can be defined as methods in this class
     // Method to enter username
     public void enterUsername(String username) {
+
         driver.findElement(usernameField).sendKeys(username);
     }
 

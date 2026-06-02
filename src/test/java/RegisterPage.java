@@ -4,12 +4,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
 import java.util.Scanner;
+
+import static org.testng.reporters.jq.BasePanel.C;
 
 public class RegisterPage {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.automationtesting.in/Register.html");
+
+        driver.manage().window().maximize(); // Maximize screen size
 
         // Add First Name and Last Name
         WebElement FirstName = driver.findElement(By.xpath("//*[@placeholder='First Name']"));
@@ -36,7 +41,6 @@ public class RegisterPage {
             radioButton.click();
         }
 
-
         //Select language in dropdown
         WebElement dropdown = driver.findElement(By.id("msdd"));
         dropdown.click();
@@ -53,11 +57,28 @@ public class RegisterPage {
         Select s = new Select(skills);
         s.selectByVisibleText("Analytics");
 
+        //Select country //cant use select class becz dropdown is searchable
+        WebElement Country = driver.findElement(By.xpath("//span[@role='combobox']"));
+        Country.click();
+        driver.findElement(By.xpath("//*[@type='search']")).sendKeys("India");
+
+        Thread.sleep(2000);
+
+        List<WebElement> countryList = driver.findElements(By.xpath("//ul[@class='select2-results__options']//li"));
+        for(WebElement list : countryList ){
+            if(list.getText().equalsIgnoreCase("India")){
+                list.click();
+
+                break;
+            }
+        }
+
+        //Upload Image
+        WebElement UploadImage = driver.findElement(By.xpath("//input[@id='imagesrc']"));
+        UploadImage.sendKeys("C:/Users/mahadik.santosh/Pictures/06.09.2022_10.52.49_REC.png");  // provide path of file to upload
+
         Thread.sleep(2000);
 
         driver.quit(); // close browser
-
-
-
     }
 }
